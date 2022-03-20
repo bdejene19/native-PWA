@@ -1,0 +1,10 @@
+{
+  "name": "Just Another Text Editor",
+  "short_name": "JATE",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "A web text editor, built using webpack to allow progressive web app native installations.",
+  "background_color": "#7eb4e2",
+  "theme_color": "#7eb4e2"
+}
