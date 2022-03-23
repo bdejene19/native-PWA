@@ -28,26 +28,27 @@ export const putDb = async (content) => {
   const res = await createdNote;
   console.log("successfully created new note");
 
-  return res;
+  // return res;
 };
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   // Create a connection to the database database and version we want to use.
-  const notesDB = await openDB("todos", 1);
+  const notesDB = await openDB("jate", 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const notesTx = notesDB.transaction("todos", "readonly");
+  const notesTx = notesDB.transaction("jate", "readwrite");
 
-  // Open up the desired object store.
-  const store = notesTx.objectStore("todos");
+  // Open jate object store.
+  const store = notesTx.objectStore("jate");
 
-  // Use the .getAll() method to get all data in the database.
+  // retrieve data
   const request = store.getAll();
 
   // Get confirmation of the request.
   const result = await request;
-  return result;
+  console.log("all content from db: ", result);
+  // return result;
 };
 
 initdb();
