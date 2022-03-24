@@ -29,8 +29,9 @@ registerRoute(({ request }) => request.mode === "navigate", pageCache);
 // TODO: Implement asset caching
 registerRoute(
   ({ request }) =>
-    // filter data types i want to cache - CSS, JS and serviceworkers
     ["style", "script", "worker", "image"].includes(request.destination),
+
+  // filter data types i want to cache - CSS, JS and serviceworkers
   new StaleWhileRevalidate({
     cacheName: "asset-cache",
     plugins: [
