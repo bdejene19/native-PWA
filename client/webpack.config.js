@@ -20,12 +20,12 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "Webpack Plugin",
+        title: "JATE Editor",
       }),
       // make my manifest here for service workers and manifest file
       new InjectManifest({
         swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
+        swDest: "src-sw.js",
       }),
 
       // plugin to generate native pwa
@@ -39,7 +39,6 @@ module.exports = () => {
         start_url: "/",
         publicPath: "/",
         inject: true,
-
         fingerprints: false,
         icons: [
           {
