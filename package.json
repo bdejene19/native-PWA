@@ -10,8 +10,6 @@
     "dev": "webpack-dev-server",
     "build": "cd client && npm run build",
     "install": "cd client && npm install",
-    "postinstall": "npm run build",
-
     "client": "cd client && npm start"
 
   },
