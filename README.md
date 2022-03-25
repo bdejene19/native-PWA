@@ -20,8 +20,7 @@ A fullstack single page applicaiton, built using HTML, CSS and JS on the fronten
     ## Live Demo Screenshot
     ### Web Version
     <img width="650" alt="Web version screenshot" src="https://user-images.githubusercontent.com/67334768/160034324-201869c5-ab05-4203-8855-7753135b6fbc.png">
-    
-        ### Locally Installed Version
+    ### Locally Installed Version
 <img width="650" alt="Locally installed app screenshot" src="https://user-images.githubusercontent.com/67334768/160034327-fa04db15-bd67-4ded-ba8c-ad5f2ac4394f.png">
 
     
